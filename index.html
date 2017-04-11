@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Event Forum</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+    <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
+
+  <style>
+    .eventbox {
+      height: 350px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="page-header">
+        <div class="pull-left">
+        <h1>Event Forum</h1>
+        </div>
+        <div class="pull-right">
+          <div id="weather" class="text-right">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form>
+        <input id="enterKeyword" type="text" placeholder="Keyword">
+        <input id="enterDate" type="text" placeholder="Date 2017-04-30">
+        <br>
+        <input id="enterCity" type="text" placeholder="City">
+        <input id="enterState" type="text" placeholder="State">
+        <input id="enterCountry" type="text" placeholder="Country">
+        <input id="theButton" type="submit" value="search">
+    </form>
+  </div>
+
+<div class="container" style="margin-top:50px">
+  <div id="options" class="row row-eq-height">
+</div>
+
+
+
+<div class="container-footer" style="margin-top:50px">
+  <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Saved Events</div>
+          <div class="panel-body">
+            <ul id="event-list" class="event-board">
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
